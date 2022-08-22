@@ -1,1 +1,1 @@
-kubectl wait --for=condition=Ready deployment/app --timeout=5s
+kubectl wait  deployment/app --timeout=5s --for condition=Available=True

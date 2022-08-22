@@ -14,10 +14,13 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/devonhk/missing-python-import
+          image: ghcr.io/devonhk/missing-python-import:fastapi
           command:
             - python
-            - main.py
+            - -m
+            - uvicorn
+            - main:app
+            - --reload
           securityContext:
             runAsUser: 1001
             allowPrivilegeEscalation: false

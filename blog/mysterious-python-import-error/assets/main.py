@@ -1,4 +1,8 @@
-import requests
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-print(requests.get("https://devon.ninja").status_code)
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}

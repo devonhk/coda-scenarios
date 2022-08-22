@@ -16,6 +16,11 @@
         "verify": "step2/verify.sh"
       }
     ],
+    "assets": {
+      "host01": [
+        {"file":  "deployment.yaml", "target": "/root", "chmod": "+w"}
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }

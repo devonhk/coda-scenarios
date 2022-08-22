@@ -1,0 +1,10 @@
+spec:
+  template:
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/devonhk/missing-python-import
+          command:
+            - tail
+            - -f
+            - /dev/null

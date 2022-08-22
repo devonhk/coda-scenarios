@@ -1,0 +1,26 @@
+{
+  "title": "Python import error caused by swapping users",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Deploy python app",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "Fix the deployment",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.x"
+  }
+}
